@@ -1,0 +1,23 @@
+.contact-list{
+    padding: 1rem;
+    width: 50rem;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: #c9ecdb;
+    margin: 2rem auto;
+}
+
+.contact-list button{
+    padding: 0.5rem 1rem;
+    background-color: #92e1bb;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ff4433;
+    cursor: pointer;
+   font: inherit;
+
+}
+
+.contact-list-header h3{
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+.contact-form{
+    width: 50rem;
+    max-width: 90%;
+    padding: 1rem;
+    background-color: #c9ecdb;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.form-controls{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+
+}
+
+.form-control label{
+    font: inherit;
+    display: block;
+    margin-bottom: 0.5rem;
+
+}
+
+.form-control input{
+    font: inherit;
+
+    padding: 0.5rem;
+    border: 1px solid #f43;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.btn-addContact{
+    text-align: right;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.btn-addContact button{
+    padding: 0.5rem 1rem;
+    font: inherit;
+    background-color: #92e1bb;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ff4433;
+    cursor: pointer;
+
+
+}

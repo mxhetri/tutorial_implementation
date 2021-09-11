@@ -1,0 +1,46 @@
+.detail-view{
+    width: 50rem;
+    max-width: 90%;
+    background-color: #c9ecdb;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.user-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-detail img{
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.user-name{
+    font-size: 2rem;
+}
+
+.user-description{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.user-actions button{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    background-color: #92e1bb;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ff4433;
+    cursor: pointer;
+}
+span{
+    width: 2px;
+    height: 15px;
+    background: #92e1bb;
+    display: inline-block;
+    margin: 0 0.5rem;
+}

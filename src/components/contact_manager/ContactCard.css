@@ -1,0 +1,34 @@
+.contact-card-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.contact-actions{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-item-description{
+    padding-left: 0.5rem;
+    gap: 1rem;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-actions button{
+    margin: 0 0.5rem;
+    padding:0.5rem 1rem;
+    background-color: #92e1bb;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ff4433;
+    cursor: pointer;
+}
+
+.user-logo{
+    height: 100px;
+    width: 100px;
+}
