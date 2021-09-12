@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header-container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),
+                    rgba(4, 9, 30, 0.7)), url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    z-index: 2;
+}
+
+.page-heading h1{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 300;
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px 20px;
+    border-radius: 2px;
+}
