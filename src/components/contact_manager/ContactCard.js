@@ -9,6 +9,9 @@ function ContactCard(props) {
     const deleteContact = (contactId) => {
         props.onDeleteContact(contactId)
     }
+    const editContact = () => {
+
+    }
     return (
         <Card className='contact-card-item'>
             <img className='user-logo' src={userLogo} alt='usr logo'/>
@@ -22,7 +25,9 @@ function ContactCard(props) {
                 </Link>
             </div>
             <div className='contact-actions'>
-                <button>Edit</button>
+                <Link to={{pathname: `/edit`, state: {contact: props.contact}}}>
+                    <button>Edit</button>
+                </Link>
                 <button onClick={() => deleteContact(props.contact.id)}>Delete</button>
             </div>
         </Card>
