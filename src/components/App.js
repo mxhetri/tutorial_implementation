@@ -1,11 +1,12 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import ContactList from "./contact_manager/contactList";
 import AddContact from "./contact_manager/add_contact/AddContact";
 import ContactDetails from "./contact_manager/ContactDetails";
 import api from '../api/Contacts'
 import UpdateContact from "./contact_manager/update_contact/UpdateContact";
+import FakeShopApp from "./fake_shop/FakeShopApp";
 
 function App() {
     const LOCAL_STORAGE_KEY = 'contacts';
@@ -33,9 +34,6 @@ function App() {
         setContacts(contacts.map(contact => {
             return contact.id === id ? {...response.data}: contact;
         }))
-
-
-
     }
 
     // delete data
@@ -79,7 +77,10 @@ function App() {
                 {/*        <Route path='/demo' component={Demo}/>*/}
                 {/*    </Switch>*/}
                 {/*</div>*/}
+                {/*<Route path='/fakeShop' component={FakeShopApp} exact/>*/}
+              <FakeShopApp/>
                 <Switch>
+
                     <Route path='/' exact render={(props) => (
                         <ContactList {...props} contactList={contacts}
                                      onAddContact={saveContactData} onDeleteContact={deleteContactData}/>
