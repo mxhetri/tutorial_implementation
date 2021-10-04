@@ -7,6 +7,7 @@ import ContactDetails from "./contact_manager/ContactDetails";
 import api from '../api/Contacts'
 import UpdateContact from "./contact_manager/update_contact/UpdateContact";
 import FakeShopApp from "./fake_shop/FakeShopApp";
+import FormikTutorialApp from "./formik_tutorial/FormikTutorialApp";
 
 function App() {
     const LOCAL_STORAGE_KEY = 'contacts';
@@ -78,8 +79,9 @@ function App() {
                 {/*    </Switch>*/}
                 {/*</div>*/}
                 {/*<Route path='/fakeShop' component={FakeShopApp} exact/>*/}
-              <FakeShopApp/>
+                <FakeShopApp/>
                 <Switch>
+                    <Route path='/formik_tut' component={FormikTutorialApp}/>
 
                     <Route path='/' exact render={(props) => (
                         <ContactList {...props} contactList={contacts}
