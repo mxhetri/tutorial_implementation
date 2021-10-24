@@ -8,6 +8,7 @@ import api from '../api/Contacts'
 import UpdateContact from "./contact_manager/update_contact/UpdateContact";
 import FakeShopApp from "./fake_shop/FakeShopApp";
 import FormikTutorialApp from "./formik_tutorial/FormikTutorialApp";
+import ReactTableApp from "./react_table/ReactTableApp";
 
 function App() {
     const LOCAL_STORAGE_KEY = 'contacts';
@@ -83,6 +84,8 @@ function App() {
                 <Switch>
                     <Route path='/formik_tut' component={FormikTutorialApp}/>
 
+                    <Route path='/react-table-tutorial' component={ReactTableApp}/>
+
                     <Route path='/' exact render={(props) => (
                         <ContactList {...props} contactList={contacts}
                                      onAddContact={saveContactData} onDeleteContact={deleteContactData}/>
@@ -97,6 +100,8 @@ function App() {
                     <Route path="/contact/:id" render={(props) => (
                         <ContactDetails {...props} onDeleteContact={deleteContactData}/>
                     )}/>
+
+
                 </Switch>
                 {/*<AddContact onAddContact={saveContactData}/>*/}
                 {/*<ContactList contactList={contacts}*/}

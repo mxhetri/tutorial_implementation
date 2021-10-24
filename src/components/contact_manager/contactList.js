@@ -8,6 +8,7 @@ function ContactList(props) {
         <div className='contact-list-header'>
             <h3><Link to='/formik_tut'>Formik Tutorial</Link></h3>
             <h3><Link to='/fakeShop'>Fake Shop</Link></h3>
+            <h3><Link to='/react-table-tutorial'>React Table</Link></h3>
             <h3>Contact List</h3>
             <div className='contact-list'>
                 <Link to='/add'>

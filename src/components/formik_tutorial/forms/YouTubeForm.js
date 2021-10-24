@@ -55,7 +55,7 @@ function YouTubeForm(props) {
 
     const validationSchema = Yup.object({
         name: Yup.string().required('Input Required !'),
-        email: Yup.string().required('Input Required ').email('Invalid email format'),
+        email: Yup.string().required('Email required').email('Invalid email format'),
         channel: Yup.string().required('Input Required !'),
     });
 

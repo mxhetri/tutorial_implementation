@@ -1,4 +1,4 @@
-import {SELECTED_PRODUCT, SET_PRODUCTS} from "./FakeShopTypes";
+import {REMOVE_SELECTED_PRODUCT, SELECTED_PRODUCT, SET_PRODUCTS} from "./FakeShopTypes";
 
 export const setProducts = (products) => {
     return({
@@ -12,4 +12,9 @@ export const selectedProduct = (product) => {
         type: SELECTED_PRODUCT,
         payload: product
     })
+}
+export const removeSelectedProduct = () => {
+    return{
+        type: REMOVE_SELECTED_PRODUCT,
+    }
 }
